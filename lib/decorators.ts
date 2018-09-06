@@ -2,10 +2,6 @@ import { Repository, Connection } from 'typeorm';
 
 export function InjectRepository(Entity: Function) {
   return (target, key) => {
-    const descriptor = Object.getOwnPropertyDescriptor(target, key);
-    const value = descriptor && descriptor.value;
-    if (value !== undefined) return value;
-
     Object.defineProperty(target, key, {
       configurable: true,
       get: function() {

@@ -1,14 +1,10 @@
 {
   "name": "@callmez/egg-typeorm",
-  "version": "0.0.4",
+  "version": "0.0.9",
   "description": "typeorm plugin for eggjs",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "tsc": "rimraf app/**/*.js lib/**/*.js && tsc",
-    "prepublish": "npm run tsc"
+    "tsc": "rimraf app/**/*.js lib/**/*.js && tsc"
   },
   "repository": {
     "type": "git",
@@ -36,7 +32,6 @@
   "devDependencies": {
     "@types/node": "^9.6.5",
     "rimraf": "^2.6.2",
-    "tslib": "^1.9.0",
     "tslint": "^5.9.1",
     "typescript": "~2.8.1"
   }

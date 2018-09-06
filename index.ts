@@ -1,7 +1,7 @@
-export * from './decorators';
-export * from './interfaces';
+export * from './lib/decorators';
+export * from './lib/interfaces';
 
-import { EggTypeormOptions } from './interfaces';
+import { EggTypeormOptions } from './lib/interfaces';
 import { Connection } from 'typeorm';
 import 'egg';
 
